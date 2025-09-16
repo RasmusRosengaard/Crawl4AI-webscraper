@@ -9,7 +9,7 @@ class Config:
         with open(CONFIG_PATH, "r") as f:
             CONFIG = json.load(f)
 
-        self.urls = CONFIG.get("Urls", [])
+        self.url = CONFIG.get("Url", [])
         self.mode = CONFIG.get("Mode", "Crawl")
 
 
